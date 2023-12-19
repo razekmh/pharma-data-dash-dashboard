@@ -1,5 +1,6 @@
 import pandas as pd
 from dash import Dash, dcc, html
+import os
 
 
 data = (
@@ -52,5 +53,5 @@ app.layout = html.Div(
 
 if __name__ == "__main__":
     app.run_server(host='0.0.0.0',
-                   port='80',
+                   port=os.environ.get('PORT', 80)
                    debug=True)
