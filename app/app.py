@@ -2,30 +2,6 @@ import pandas as pd
 from dash import Dash, dcc, html
 
 
-# class MainApplication:
-#     def __init__(self):
-#         self.__app = Dash(
-#             __name__,
-#             update_title="Loading...",
-#             use_pages=True,
-#         )
-
-
-#     @property
-#     def app(self):
-#         return self.__app
-
-
-# Application = MainApplication()
-# app = Application.app.server
-
-
-
-
-
-
-
-
 data = (
     pd.read_csv("pharma_data.csv")
     .query("type == 'conventional' and region == 'Albany'")
