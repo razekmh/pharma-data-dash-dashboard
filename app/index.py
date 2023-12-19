@@ -1,4 +1,4 @@
-import pandas as pd
+# import pandas as pd
 from dash import Dash, dcc, html, page_container, dcc, clientside_callback, ClientsideFunction, Output, Input
 
 class MainApplication:
